@@ -1,0 +1,23 @@
+.container-body {
+    margin: 40px;
+}
+.marginRight {
+    margin-right: 20px;
+}
+.marginTop {
+    margin-top: 20px;
+}
+
+.font-color{
+    color: #57313E
+}
+  
+.button-color{
+    background-color: #FF3C04;
+}
+
+#main-title{
+    font-family: 'Voltaire';
+    font-weight: 'bold';
+    font-size: 2rem !important;
+  }
