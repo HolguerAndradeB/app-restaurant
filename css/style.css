@@ -10,6 +10,12 @@
 .marginBottom {
     margin-bottom: 20px;
 }
+.card {
+    max-height: 330px;
+}
+.card-img-top {
+    height: 330px;
+}
 
 .font-color{
     color: #57313E
@@ -33,7 +39,8 @@
     padding-top: 15px;
 }
 .linksFooter {
-    margin-right: 60px;
+    /* margin-right: 50px; */
+    margin: auto;
     color: white;
 }
 .imgFooter {
@@ -56,12 +63,15 @@
     right: 10px;
     padding: 10px;
     background-color: #FF3C04;
-    width: 30px;
+    width: 50px;
     height: auto;
 }
 .redes .red {
-    font-weight: bolder;
-    font-size: 20px;
-    text-align: center;
+    /* height: 30px; */
     padding: 5px;
+    margin: auto;
+    /* display:initial; */
+}
+.colorImg{
+    filter: brightness(100);
 }

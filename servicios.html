@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-	  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Voltaire&display=swap" rel="stylesheet"> 
-    <title>Principal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Voltaire&display=swap" rel="stylesheet"> 
+  <title>Servicios</title>
 </head>
 <body>
   <!--NAV BAR-->
@@ -25,25 +25,28 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-        <a class="nav-link" href="nosotros.html">Nosotros <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="nosotros.html">Nosotros <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="menu.html">Menú</a>
+          <a class="nav-link" href="menu.html">Menú</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="servicios.html">Servicios</a>
+          <a class="nav-link" href="servicios.html">Servicios</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="contacto.html">Contáctanos</a>
+          <a class="nav-link" href="contacto.html">Contáctanos</a>
+        </li>
+        <li class="nav-item">
+          <a href="contacto.html" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">Reserva en línea</a>
         </li>
       </ul>
     </div>
   </nav>
 
   <div class="redes">
-    <div class="red"><img src="img/ico-facebook@2x.png"class="icons" style="display: block; margin-bottom: 1px;"></div>
-    <div class="red"><img src="img/ico-twitter@2x.png" class="icons" style="display: block; margin-bottom: 1px;"></div>
-    <div class="red"><img src="img/ico-youtube@2x.png" class="icons" style="display: block; margin-bottom: 1px;"></div>
+    <div class="red"><a href="https://www.facebook.com/"><img class="img-fluid colorImg" src="img/red_facebook.png"></a></div>
+    <div class="red"><a href="https://twitter.com/?lang=es"><img class="img-fluid colorImg" src="img/red_twitter.png"></a></div>
+    <div class="red"><a href="https://www.youtube.com/"><img class="img-fluid colorImg" src="img/red_youtobe.png"></a></div>
   </div>
 
   <!-- INICIO CONTAINER -->
@@ -63,71 +66,71 @@
     </div>
 
     <!-- INICO DE LOS CARDS DE LOS SERVICIOS -->
-    <div class="row marginTop">
-      <div class="col-sm-6">
+    <div class="row">
+      <div class="col-sm-6 marginTop">
         <div class="card" style="width: 100%;">
-          <img src="img/cumple.jpg" class="card-img-top" alt="imagen">
+          <img src="img/cumple.jpg" class="card-img-top img-fluid" alt="imagen">
         </div>
         <div class="card-body text-justify"  style="background-color: bisque;">
           <h5 class="card-title">Celebración de cumpleaños</h5>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quidem quos culpa reprehenderit. Odit modi culpa veniam. Odit numquam voluptatum adipisci ad ab sint? Quasi similique voluptatem doloribus accusamus explicabo!.</p>
-          <a href="contacto.html" class="btn btn-info">¿Preguntas? contáctanos</a>
+          <a href="contacto.html" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">Reserva en línea</a>
         </div>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 marginTop">
         <div class="card" style="width: 100%;">
-          <img src="img/aniversario.jpg" class="card-img-top" alt="imagen" >
+          <img src="img/aniversario.jpg" class="card-img-top img-fluid" alt="imagen" >
         </div>
         <div class="card-body text-justify"  style="background-color: bisque;">
           <h5 class="card-title">Aniversarios</h5>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quidem quos culpa reprehenderit. Odit modi culpa veniam. Odit numquam voluptatum adipisci ad ab sint? Quasi similique voluptatem doloribus accusamus explicabo!.</p>
-          <a href="contacto.html" class="btn btn-info">¿Preguntas? contáctanos</a>
+          <a href="contacto.html" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">Reserva en línea</a>
         </div>
       </div>
     </div>
 
-    <div class="row marginTop">
-      <div class="col-sm-6">
+    <div class="row">
+      <div class="col-sm-6 marginTop">
         <div class="card" style="width: 100%;">
-          <img src="img/infantiles.jpg" class="card-img-top" alt="imagen">
+          <img src="img/infantiles.jpg" class="card-img-top img-fluid" alt="imagen">
         </div>
         <div class="card-body text-justify"  style="background-color: bisque;">
           <h5 class="card-title">Fiestas infantiles</h5>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quidem quos culpa reprehenderit. Odit modi culpa veniam. Odit numquam voluptatum adipisci ad ab sint? Quasi similique voluptatem doloribus accusamus explicabo!.</p>
-          <a href="contacto.html" class="btn btn-info">¿Preguntas? contáctanos</a>
+          <a href="contacto.html" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">Reserva en línea</a>
         </div>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 marginTop">
         <div class="card" style="width: 100%;">
-          <img src="img/propuesta.jpg" class="card-img-top" alt="imagen">
+          <img src="img/propuesta.jpg" class="card-img-top img-fluid" alt="imagen">
         </div>
         <div class="card-body text-justify"  style="background-color: bisque;">
           <h5 class="card-title">Declaraciones o propuestas</h5>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quidem quos culpa reprehenderit. Odit modi culpa veniam. Odit numquam voluptatum adipisci ad ab sint? Quasi similique voluptatem doloribus accusamus explicabo!.</p>
-          <a href="contacto.html" class="btn btn-info">¿Preguntas? contáctanos</a>
+          <a href="contacto.html" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">Reserva en línea</a>
         </div>
       </div>
     </div>
 
-    <div class="row marginTop marginBottom">
-      <div class="col-sm-6">
+    <div class="row marginBottom">
+      <div class="col-sm-6 marginTop">
         <div class="card" style="width: 100%;">
-          <img src="img/despedida.jpg" class="card-img-top" alt="imagen">
+          <img src="img/despedida.jpg" class="card-img-top img-fluid" alt="imagen">
         </div>
         <div class="card-body text-justify"  style="background-color: bisque;">
           <h5 class="card-title">Despedidas</h5>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quidem quos culpa reprehenderit. Odit modi culpa veniam. Odit numquam voluptatum adipisci ad ab sint? Quasi similique voluptatem doloribus accusamus explicabo!.</p>
-          <a href="contacto.html" class="btn btn-info">¿Preguntas? contáctanos</a>
+          <a href="contacto.html" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">Reserva en línea</a>
         </div>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 marginTop">
         <div class="card" style="width: 100%;">
-          <img src="img/amigos.jpg" class="card-img-top" alt="imagen">
+          <img src="img/amigos.jpg" class="card-img-top img-fluid" alt="imagen">
         </div>
         <div class="card-body text-justify"  style="background-color: bisque;">
           <h5 class="card-title">Cena con amigos</h5>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quidem quos culpa reprehenderit. Odit modi culpa veniam. Odit numquam voluptatum adipisci ad ab sint? Quasi similique voluptatem doloribus accusamus explicabo!.</p>
-          <a href="contacto.html" class="btn btn-info">¿Preguntas? contáctanos</a>
+          <a href="contacto.html" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">Reserva en línea</a>
         </div>
       </div>
     </div>
@@ -135,11 +138,91 @@
 
   </div>
 
+  <!-- MODAL RESERVA -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Reserva tu servicio</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="was-validated" action="https://formsubmit.co/holgerandrade@gmail.com" method="POST" autocomplete="off">
+            <div class="row">
+              <div class="form-group col">
+                <label for="names">Nombres</label>
+                <input type="text" class="form-control" id="names" name="nombres" placeholder="Nombres" required>
+              </div>
+              <div class="form-group col">
+                <label for="surnames">Apellidos</label>
+                <input type="text" class="form-control" id="surnames" name="apellidos" placeholder="Apellidos" required>
+              </div>
+              <div class="form-group col">
+                <label for="servicio">Servicio</label>
+                <select class="form-control custom-select" id="servicio" name="servicio" required>
+                  <option value="">Seleccione una opción</option>
+                  <option value="Celebración de cumpleaños">Celebración de cumpleaños</option>
+                  <option value="Aniversarios">Aniversarios</option>
+                  <option value="Fiestas infantiles">Fiestas infantiles</option>
+                  <option value="Declaraciones o propuestas">Declaraciones o propuestas</option>
+                  <option value="Despedidas">Despedidas</option>
+                  <option value="Cena con amigos">Cena con amigos</option>
+                </select>
+                <!-- <div class="invalid-feedback">Campo obligatorio</div> -->
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-group col">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="user@dominio.com" required>
+              </div>
+              <div class="form-group col">
+                <label for="phone">Celular</label>
+                <input type="number" class="form-control" id="phone" name="celular" required>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-group col">
+                <label for="personas">N° de personas</label>
+                <input type="number" class="form-control" id="personas" name="personas" placeholder="0" required>
+              </div>
+              <div class="form-group col">
+                <label for="fecha">Fecha y hora</label>
+                <input type="datetime-local" class="form-control" id="fecha" name="fecha" required>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-group col">
+                <label for="solicitudes">Solicitudes adicionales</label>
+                <input type="text" class="form-control" id="solicitudes" name="solicitudes" required>
+              </div>
+            </div>
+
+            <!-- <button type="submit" class="btn btn-primary">Guardar reserva</button> -->
+            <input type="hidden" name="_next" value="http://localhost/app-restaurant/servicios.html">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_autoresponse" value="Reserva realizada satisfactoriamente.">
+            <!-- <input type="hidden" name ="_captcha" value = "false"> -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary" onclick="sendEmail(form.email.value)" >Guardar reserva</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+
   <!-- FOOTER -->
   <footer class="footer1">
     <div class="row marginTop">
       <div class="col-sm-3">
-        <img src="img/logo.png" class="imgFooter">
+        <img src="img/logo.png" class="imgFooter img-fluid">
       </div>
       <div class="col-sm-4">
         <div class="row">
@@ -170,7 +253,7 @@
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>
