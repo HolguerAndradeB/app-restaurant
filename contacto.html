@@ -43,7 +43,158 @@
         </div>
     </nav>
 
+    <!-- RESDES SOCIALES -->
+    <div class="redes">
+        <div class="red"><a href="https://www.facebook.com/"><img class="img-fluid colorImg" src="img/red_facebook.png"></a></div>
+        <div class="red"><a href="https://twitter.com/?lang=es"><img class="img-fluid colorImg" src="img/red_twitter.png"></a></div>
+        <div class="red"><a href="https://www.youtube.com/"><img class="img-fluid colorImg" src="img/red_youtobe.png"></a></div>
+    </div>
 
+    <!-- MODAL RESERVA -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Reserva tu servicio</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <form class="was-validated" action="https://formsubmit.co/holgerandrade@gmail.com" method="POST" autocomplete="off">
+                <div class="row">
+                <div class="form-group col">
+                    <label for="names">Nombres</label>
+                    <input type="text" class="form-control" id="names" name="nombres" placeholder="Nombres" required>
+                </div>
+                <div class="form-group col">
+                    <label for="surnames">Apellidos</label>
+                    <input type="text" class="form-control" id="surnames" name="apellidos" placeholder="Apellidos" required>
+                </div>
+                <div class="form-group col">
+                    <label for="servicio">Servicio</label>
+                    <select class="form-control custom-select" id="servicio" name="servicio" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="Celebración de cumpleaños">Celebración de cumpleaños</option>
+                    <option value="Aniversarios">Aniversarios</option>
+                    <option value="Fiestas infantiles">Fiestas infantiles</option>
+                    <option value="Declaraciones o propuestas">Declaraciones o propuestas</option>
+                    <option value="Despedidas">Despedidas</option>
+                    <option value="Cena con amigos">Cena con amigos</option>
+                    </select>
+                    <!-- <div class="invalid-feedback">Campo obligatorio</div> -->
+                </div>
+                </div>
+
+                <div class="row">
+                <div class="form-group col">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="user@dominio.com" required>
+                </div>
+                <div class="form-group col">
+                    <label for="phone">Celular</label>
+                    <input type="number" class="form-control" id="phone" name="celular" required>
+                </div>
+                </div>
+
+                <div class="row">
+                <div class="form-group col">
+                    <label for="personas">N° de personas</label>
+                    <input type="number" class="form-control" id="personas" name="personas" placeholder="0" required>
+                </div>
+                <div class="form-group col">
+                    <label for="fecha">Fecha y hora</label>
+                    <input type="datetime-local" class="form-control" id="fecha" name="fecha" required>
+                </div>
+                </div>
+
+                <div class="row">
+                <div class="form-group col">
+                    <label for="solicitudes">Solicitudes adicionales</label>
+                    <input type="text" class="form-control" id="solicitudes" name="solicitudes" required>
+                </div>
+                </div>
+
+                <!-- <button type="submit" class="btn btn-primary">Guardar reserva</button> -->
+                <input type="hidden" name="_next" value="http://localhost/app-restaurant/servicios.html">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_autoresponse" value="Reserva realizada satisfactoriamente.">
+                <!-- <input type="hidden" name ="_captcha" value = "false"> -->
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-primary" onclick="sendEmail(form.email.value)" >Guardar reserva</button>
+            </div>
+        </form>
+        </div>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <section class="container">
+        <div class="row">
+          <div class="col-12 my-5">
+            <h3 class="display-1 fw-bold" style="color:#532A38; font-family: 'Yanone Kaffeesatz', sans-serif; font-weight: 600;">Contáctanos
+            </h3>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p class="fw-bold" style="color:#532A38; text-align:left">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Maxime ipsa voluptas officia voluptatibus odit tempore! Non dolorum dolore, tempore ex quas unde odio voluptate rerum
+                praesentium id quod minus repudiandae. Cumque quos laboriosam incidunt totam, delectus reprehenderit tempore in dolorum
+                aspernatur, tempora saepe ullam sunt porro labore nobis quidem iure vero doloribus harum nesciunt optio facilis nulla.
+                <br><br>
+                            Laudantium, deserunt quidem?
+                            Quia, voluptas. A, quidem minima ducimus voluptates nisi nemo in explicabo repellendus vero
+                            eaque
+                            sequi
+                            nam accusantium provident. Nostrum odio, reiciendis asperiores ab totam ex expedita voluptate
+                            atque
+                            cumque harum?
+                            Eligendi labore excepturi vero magnam harum ullam suscipit, sed voluptatibus illo modi quasi nam
+                            veniam.
+                        </p>
+                    </div>
+                    <div class="col">
+                        <form class="">
+                            <div class="mb-2">
+                                <select id="servicios" name="servicios" class="form-select fw-bold">
+                                    <option selected>Seleccione el servicio</option>
+                                    <option value="1">Celebración de cumpleaños</option>
+                                    <option value="2">Aniversarios</option>
+                                    <option value="3">Fiestas infantiles</option>
+                                    <option value="4">Declaracion</option>Declaraciones o porpuestas</option>
+                                    <option value="5">Despedidas</option>
+                                    <option value="6">Cena con amigos</option>
+                                </select>
+                            </div>
+                            <div class="mb-2"><input type="text" class="form-control fw-bold" id="asunto" name="asunto"
+                                    placeholder="Asunto" style="background-color: #DFDED9; color: #7A7974"></div>
+                            <div class="mb-2"><input type="text" class="form-control fw-bold" id="nombrecompleto"
+                                    name="nombrecompleto" placeholder="Nombrecompleto"
+                                    style="background-color: #DFDED9; color: #7A7974">
+                            </div>
+                            <div class="mb-2"><input type="email" class="form-control fw-bold" id="email" name="email"
+                                    placeholder="Correo electrónico" style="background-color: #DFDED9; color: #7A7974">
+                            </div>
+                            <div class="mb-2"><textarea name="comentarios" class="form-control fw-bold" rows="10" cols="90"
+                                    placeholder=" Su mensaje" style="background-color: #DFDED9; color: #7A7974"></textarea>
+                            </div>
+                            <div class="form-check mb-3"><input type="checkbox" class="form-check-input" id="terminos"
+                                    name="terminos" value="terminos">
+                                <label for="terminos" class="form-check-label">Acepto Terminos y condiciones</label>
+                            </div>
+                            <div class="mb-2" style="text-align: center">
+                                <button type="button" class="btn btn-primary btn-lg fw-bold"
+                                    style="width: 250px; height: 70px; background-color: #FF3C04;">
+                                    ENVIAR</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- fin del formulario -->
 
     <!-- FOOTER -->
     <footer class="footer1">

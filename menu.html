@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/menu.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Voltaire&display=swap" rel="stylesheet"> 
+    <title>Menu</title>
+</head>
+<body>
+    <!--NAV BAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="card-img-top" alt="imagen" height="50px"></a> -->
+        <a class="navbar-brand" id="main-title" href="index.html">sal&salsa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+            <a class="nav-link" href="nosotros.html">Nosotros <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menú</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contáctanos</a>
+            </li>
+            <li class="nav-item">
+            <a href="contacto.html" class="btn btn-info" data-toggle="modal" data-target="#modalReserva">Reserva en línea</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+
+    <!-- REDES SOCIALES -->
+    <div class="redes">
+        <div class="red"><a href="https://www.facebook.com/"><img class="img-fluid colorImg" src="img/red_facebook.png"></a></div>
+        <div class="red"><a href="https://twitter.com/?lang=es"><img class="img-fluid colorImg" src="img/red_twitter.png"></a></div>
+        <div class="red"><a href="https://www.youtube.com/"><img class="img-fluid colorImg" src="img/red_youtobe.png"></a></div>
+    </div>
+
+    <!-- MAIN -->
+    <!--titulo y boton de descarga-->
+    <div class="pageTitle container mb-2 mt-5">
+        <div class="row">
+            <div class="col-8 pl-5">
+                <span id='title'><h1>El menú</h1></span>
+            </div>
+            <div class="col-4 ">
+                <span id='descargar_menu'>
+                    <button type="button" class="btn btn-descargar">
+                      <a href="menu.pdf" download="menu_restaurante" id="boton-descarga">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                              <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                              <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                          </svg>
+                          Descargar menú
+                        </a>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!--/-->
+
+    <!--platos-->
+    <div class="container">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-xs-2 mx-auto">
+
+          <button type="button" class="btn img-btn" data-toggle="modal" data-target="#exampleModal">
+            <div class="col mb-4">
+              <div class="card card-br">
+                <img src="img/menu1@2x.png" class="card-img-top" alt="...">
+                <div class="card-body pt-1">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+          </button>
+
+          <button type="button" class="btn img-btn" data-toggle="modal" data-target="#exampleModal">
+            <div class="col mb-4">
+              <div class="card card-or">
+                <img src="img/menu2@2x.png" class="card-img-top" alt="...">
+                <div class="card-body pt-1">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+          </button>
+
+          <button type="button" class="btn img-btn" data-toggle="modal" data-target="#exampleModal">
+            <div class="col mb-4">
+              <div class="card card-br">
+                <img src="img/menu3@2x.png" class="card-img-top" alt="...">
+                <div class="card-body pt-1">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+          </button>
+
+          <button type="button" class="btn img-btn" data-toggle="modal" data-target="#exampleModal">
+            <div class="col mb-4">
+                <div class="card card-br">
+                    <img src="img/menu4@2x.png" class="card-img-top" alt="...">
+                    <div class="card-body pt-1">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+          </button>
+
+          <button type="button" class="btn img-btn" data-toggle="modal" data-target="#exampleModal">
+            <div class="col mb-4">
+                <div class="card card-or">
+                    <img src="img/menu5@2x.png" class="card-img-top" alt="...">
+                    <div class="card-body pt-1">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+          </button>
+
+          <button type="button" class="btn img-btn" data-toggle="modal" data-target="#exampleModal">
+            <div class="col mb-4">
+                <div class="card card-br">
+                    <img src="img/menu1@2x.png" class="card-img-top" alt="...">
+                    <div class="card-body pt-1">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+          </button>
+
+          <button type="button" class="btn img-btn" data-toggle="modal" data-target="#exampleModal">
+            <div class="col mb-4">
+              <div class="card card-br">
+                <img src="img/menu1@2x.png" class="card-img-top" alt="...">
+                <div class="card-body pt-1">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+          </button>
+
+          <button type="button" class="btn img-btn" data-toggle="modal" data-target="#exampleModal">
+            <div class="col mb-4">
+              <div class="card card-or">
+                <img src="img/menu2@2x.png" class="card-img-top" alt="...">
+                <div class="card-body pt-1">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+          </button>
+
+          <button type="button" class="btn img-btn" data-toggle="modal" data-target="#exampleModal">
+            <div class="col mb-4">
+              <div class="card card-br">
+                <img src="img/menu3@2x.png" class="card-img-top" alt="...">
+                <div class="card-body pt-1">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+          </button>
+
+          <button type="button" class="btn img-btn" data-toggle="modal" data-target="#exampleModal">
+            <div class="col mb-4">
+                <div class="card card-br">
+                  <img src="img/menu1@2x.png" class="card-img-top" alt="...">
+                  <div class="card-body pt-1">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                </div>
+            </div>
+          </button>
+
+          <button type="button" class="btn img-btn" data-toggle="modal" data-target="#exampleModal">
+            <div class="col mb-4">
+                <div class="card card-or">
+                    <img src="img/menu2@2x.png" class="card-img-top" alt="...">
+                    <div class="card-body pt-1">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+          </button>
+
+          <button type="button" class="btn img-btn" data-toggle="modal" data-target="#exampleModal">
+            <div class="col mb-4">
+                <div class="card card-br">
+                    <img src="img/menu3@2x.png" class="card-img-top" alt="...">
+                    <div class="card-body pt-1">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+          </button>
+        </div>
+
+    </div>
+    <!--/platos-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" id="product-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Producto</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-br">Pedir</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!--paginas-->
+    <div class="container pb-5" id="">
+        <div class="row justify-content-center" id="botones-paginas">
+        <button type="button" class="btn card-or pagina-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+            </svg>
+            Anterior</button>
+        <button type="button" class="btn card-or pagina-btn">
+            Siguiente
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+        </button>
+        </div>
+    </div>
+    <!--/paginas-->
+
+
+    <!-- MODAL RESERVA -->
+    <div class="modal fade" id="modalReserva" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Reserva tu servicio</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <form class="was-validated" action="https://formsubmit.co/holgerandrade@gmail.com" method="POST" autocomplete="off">
+                <div class="row">
+                <div class="form-group col">
+                    <label for="names">Nombres</label>
+                    <input type="text" class="form-control" id="names" name="nombres" placeholder="Nombres" required>
+                </div>
+                <div class="form-group col">
+                    <label for="surnames">Apellidos</label>
+                    <input type="text" class="form-control" id="surnames" name="apellidos" placeholder="Apellidos" required>
+                </div>
+                <div class="form-group col">
+                    <label for="servicio">Servicio</label>
+                    <select class="form-control custom-select" id="servicio" name="servicio" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="Celebración de cumpleaños">Celebración de cumpleaños</option>
+                    <option value="Aniversarios">Aniversarios</option>
+                    <option value="Fiestas infantiles">Fiestas infantiles</option>
+                    <option value="Declaraciones o propuestas">Declaraciones o propuestas</option>
+                    <option value="Despedidas">Despedidas</option>
+                    <option value="Cena con amigos">Cena con amigos</option>
+                    </select>
+                    <!-- <div class="invalid-feedback">Campo obligatorio</div> -->
+                </div>
+                </div>
+
+                <div class="row">
+                <div class="form-group col">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="user@dominio.com" required>
+                </div>
+                <div class="form-group col">
+                    <label for="phone">Celular</label>
+                    <input type="number" class="form-control" id="phone" name="celular" required>
+                </div>
+                </div>
+
+                <div class="row">
+                <div class="form-group col">
+                    <label for="personas">N° de personas</label>
+                    <input type="number" class="form-control" id="personas" name="personas" placeholder="0" required>
+                </div>
+                <div class="form-group col">
+                    <label for="fecha">Fecha y hora</label>
+                    <input type="datetime-local" class="form-control" id="fecha" name="fecha" required>
+                </div>
+                </div>
+
+                <div class="row">
+                <div class="form-group col">
+                    <label for="solicitudes">Solicitudes adicionales</label>
+                    <input type="text" class="form-control" id="solicitudes" name="solicitudes" required>
+                </div>
+                </div>
+
+                <!-- <button type="submit" class="btn btn-primary">Guardar reserva</button> -->
+                <input type="hidden" name="_next" value="http://localhost/app-restaurant/servicios.html">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_autoresponse" value="Reserva realizada satisfactoriamente.">
+                <!-- <input type="hidden" name ="_captcha" value = "false"> -->
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-primary" onclick="sendEmail(form.email.value)" >Guardar reserva</button>
+            </div>
+        </form>
+        </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer1">
+        <div class="row marginTop">
+        <div class="col-sm-3">
+            <img src="img/logo.png" class="imgFooter img-fluid">
+        </div>
+        <div class="col-sm-4">
+            <div class="row">
+            <a class="linksFooter" href="mapa.html"><h4>MAPA DE SITIO</h4></a>
+            <a class="linksFooter" href="contacto.html"><h4>CONTÁCTANOS</h4></a>
+            <a class="linksFooter" href="index.html"><h4>RESERVAS</h4></a>
+            </div>
+            <div class="row marginTop marginBottom">
+            <div class="div">
+                <span>Restaurante Sal y Salsa Ltda.</span><br>
+                <span>Calle 19 No 7-30 Bogotá.</span><br>
+                <span>Reservas@salysalsa.com</span><br>
+                <span>312 325 1321.</span><br>
+                <span></span><br>
+                <span>© Copyright 2021.</span>
+            </div>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-3">
+            <iframe class="mapFooter" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18905.68596021383!2d-73.99566298628417!3d5.
+            033659393981423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e407020507b7b01%3A0xdf488196ac237f!2sCatedra
+            l%20de%20Sal!5e0!3m2!1ses-419!2sco!4v1631554022886!5m2!1ses-419!2sco" allowfullscreen=""
+            loading="lazy"></iframe>
+        </div>
+        </div>
+    </footer>    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

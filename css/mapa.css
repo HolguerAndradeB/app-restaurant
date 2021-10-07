@@ -1,0 +1,126 @@
+#title{
+  font-family: 'Yanone Kaffeesatz';
+  color: #5E3543;
+  text-align: center;
+  padding: 20px;
+  max-width: 750px;
+  margin: auto;
+  
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color:greenyellow;
+    
+    
+}
+.design__img {
+  width:100%;
+  height: 100%;
+
+
+}
+.design__item {
+  position: relative;
+  
+}
+
+.design__title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: whitesmoke;
+  font-size: 1.8em;
+  width: 100%;
+  text-align: center;
+  font-family: 'Yanone Kaffeesatz';
+  
+}
+.design__title:before {
+  content: "";
+  width: 200px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #5E3543;
+}
+.design__title:after {
+  content: "";
+  width: 200px;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #5E3543;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+ 
+  .design__item{
+    height: 400px;
+    
+    
+  }
+  .container-design .design__img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .container-design, .container-tips{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:12em;
+     margin-right: 2em;
+     margin-top:  2em;
+  }
+  .design__item{
+    width: 50%;
+  }
+  .container-box{
+    width: 50%;
+  }
+  .container-tips {
+    height: 500px;
+  }
+  .container-tips .design__item{
+    height: 100%;
+  }
+  .container-tips .design__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .column--50-25 {
+    width: 24%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1200px;
+  }
+  .design__title{
+    font-size: 2.5em;
+    
+    
+  }
+  .design__item{
+    height: 500px;
+     padding: 20px;
+    max-width: 750px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1400px;
+  }
+  .banner__title, .banner__txt {
+    font-size: 2em;
+  }
+}

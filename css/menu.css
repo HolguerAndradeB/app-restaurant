@@ -1,0 +1,61 @@
+#title{
+    font-family: 'Yanone Kaffeesatz';
+    color: #5E3543;
+}
+
+.barra-redes{
+    background-color: #FF3C04;
+}
+
+.btn-descargar{
+    color: white;
+    background-color:#FF3C04;
+    border-color: #FF3C04;
+}
+
+.card-img-top{
+    width: 95% !important;
+    height: 95% !important;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-br{
+    background-color: #5E3543 !important;
+    color: white !important;
+}
+.card-or{
+    background-color: #FF3C04 !important;
+    color: white !important;
+}
+
+.card-title{
+    font-family: 'Yanone Kaffeesatz';
+}
+
+.img-btn{
+    padding: 0 !important;
+    max-width: fit-content !important;
+    text-align: start !important;
+}
+
+#product-modal h5{
+    font-family: 'Yanone Kaffeesatz';
+    color: #5E3543;
+}
+
+.btn-br{
+    background-color: #5E3543;
+    color: #ffff;
+}
+
+.pagina-btn{
+    margin-right: .25rem;
+    margin-left: .25rem;
+}
+
+#boton-descarga{
+    color: #ffff !important;
+    text-decoration: none !important;
+}
